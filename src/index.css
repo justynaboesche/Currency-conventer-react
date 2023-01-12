@@ -8,16 +8,16 @@ html {
   box-sizing: inherit;
 }
 
-body {
+#root {
   font-family: 'Montserrat', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url("../images/background.jpg");
+  /* background-image: url("../images/background.jpg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: black;
+  background-color: white;
 }
 
