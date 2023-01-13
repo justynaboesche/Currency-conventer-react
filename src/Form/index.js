@@ -1,7 +1,7 @@
 import "./style.css";
 
 const Form = (props) => (
-    <form className="form">
+  <form className="form">
     <fieldset className="form__fieldset">
       <h1 className="form__header">Kalkulator walut</h1>
       <p>
@@ -12,8 +12,14 @@ const Form = (props) => (
           <span className="form__label">
             Kwota w PLN*:
           </span>
-          <input className="form__field" type="number" min="0.01" step="0.01" required
-            placeholder="Wpisz kwotę w PLN" />
+          <input
+            className="form__field"
+            type="number"
+            min="0.01"
+            step="0.01"
+            required
+            placeholder="Wpisz kwotę w PLN"
+          />
         </label>
       </p>
       <p>
