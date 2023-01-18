@@ -1,5 +1,5 @@
 # Currency Conventer - react
-![Currency Conventer]](public/images/share.png) 
+![Currency Conventer]](https://raw.githubusercontent.com/justynaboesche/Currency-conventer-react/main/public/images/share.png) 
 ## Demo
 [See my Currency Conventer](https://justynaboesche.github.io/Currency-conventer-react/)
 ## Description
