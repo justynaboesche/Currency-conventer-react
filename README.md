@@ -1,6 +1,33 @@
-# Getting Started with Create React App
+# Currency Conventer - react
+![Currency Conventer]](public/images/share.png) 
+## Demo
+[See my Currency Conventer](https://justynaboesche.github.io/Currency-conventer-react/)
+## Description
+I have created an application that allows you to exchange Polish currency PLN into some other currencies. This is another version of currency-converter created as part of YouCode course.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+This simple currency-converter allows you to:
+- enter your amount of money in PLN,
+- select the currency from the list you want to convert into,
+- get the result by clicking the 'Przelicz' button,
+- reset the amount in PLN and the result by clicking the 'Wyczyść' button. 
+
+The application has been prepared to be used in convenient way also on smaller devices.
+## How it works
+
+![Currency Conventer GIF](https://raw.githubusercontent.com/justynaboesche/To-do-list-react/main/public/to-do-list2.gif)
+
+## Technologies used in the project
+To create the application I have used:
+- HTML 5
+- CSS Grid
+- Normalize.css
+- Media queries
+- BEM convention
+- JavaScript ES6+
+- React
+- Create-react-app
 
 ## Available Scripts
 
