@@ -1,12 +1,11 @@
 import "./style.css";
 
-const Footer = ({ title }) => (
+export const Footer = ({ description }) => (
     <footer className="footer">
         <p className="footer__paragraph">
-            { title }
+            { description }
         </p>
     </footer>
 );
 
 
-export default Footer;
