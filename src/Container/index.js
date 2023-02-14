@@ -1,8 +1,8 @@
-import "./style.css";
+import { Wrapper } from './styled.js';
 
 export const Container = ({ children }) => (
-    <main className="container">
+    <Wrapper>
         {children}
-    </main>
+    </Wrapper>
 );
 
