@@ -1,11 +1,11 @@
-import "./style.css";
+import { Wrapper, StyledFooter } from './styled.js';
 
 export const Footer = ({ description }) => (
-    <footer className="footer">
-        <p className="footer__paragraph">
-            { description }
-        </p>
-    </footer>
+    <Wrapper>
+        <StyledFooter>
+            {description}
+        </StyledFooter>
+    </Wrapper>
 );
 
 
