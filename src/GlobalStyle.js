@@ -15,15 +15,15 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   #root {
-  font-family: 'Montserrat', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-image: url("${background}");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: white;
-}
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("${background}");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+  }
 `;
