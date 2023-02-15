@@ -1,4 +1,4 @@
-import "./style.css";
+import { StyledForm, Header, Label, Field } from "./styled";
 import { currencies } from "../currencies";
 import { useState } from "react";
 import { Result } from "./Result";
@@ -31,21 +31,23 @@ export const Form = () => {
   };
 
   return (
-    <form className="form" onSubmit={onFormSubmit}>
-      <Clock/>
-      <h1 className="form__header">Kalkulator walut</h1>
+    <StyledForm
+      onSubmit={onFormSubmit}>
+      <Clock />
+      <Header>
+        Kalkulator walut
+      </Header>
       <p>
         Pola wymagane oznaczone są *.
       </p>
       <p>
         <label>
-          <span className="form__label">
+          <Label>
             Kwota w PLN*:
-          </span>
-          <input
+          </Label>
+          <Field
             value={amount}
             onChange={({ target }) => setAmount(target.value)}
-            className="form__field"
             type="number"
             min="0.01"
             step="0.01"
@@ -56,12 +58,11 @@ export const Form = () => {
       </p>
       <p>
         <label>
-          <span className="form__label">
+          <Label>
             Wybierz walutę*:
-          </span>
-          <select
+          </Label>
+          <Field as="select"
             value={currency}
-            className="form__field"
             onChange={({ target }) => setCurrency(target.value)}
           >
             {currencies.map((currency => (
@@ -72,11 +73,11 @@ export const Form = () => {
                 {currency.longName}
               </option>
             )))}
-          </select>
+          </Field>
         </label>
       </p>
       <Buttons onResetClick={onResetClick} />
       <Result result={result} />
-    </form>
+    </StyledForm>
   )
 };
