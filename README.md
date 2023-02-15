@@ -21,13 +21,16 @@ The application has been prepared to be used in convenient way also on smaller d
 ## Technologies used in the project
 To create the application I have used:
 - HTML 5
-- CSS Grid
+- CSS (Grid, Flex, media queries)
 - Normalize.css
-- Media queries
-- BEM convention
 - JavaScript ES6+
 - React
 - Create-react-app
+- Styled-components
+- ThemeProvider
+- React Hooks (useState, useState, useRef, Custom)
+- Local storage
+- Markdown
 
 ## Available Scripts
 
