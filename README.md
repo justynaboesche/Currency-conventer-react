@@ -3,7 +3,7 @@
 ## Demo
 [See my Currency Conventer](https://justynaboesche.github.io/Currency-conventer-react/)
 ## Description
-I have created an application that allows you to exchange Polish currency PLN into some other currencies. This is another version of currency-converter created as part of YouCode course.
+I have created an application that allows you to exchange Polish currency PLN into some other currencies. Current exchange rates are downloaded from the external API from https://exchangerate.host/. This is another version of currency-converter created as part of YouCode course.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -28,9 +28,13 @@ To create the application I have used:
 - Create-react-app
 - Styled-components
 - ThemeProvider
-- React Hooks (useState, useState, useRef, Custom)
-- Local storage
-- Markdown
+- React Hooks (useState, useState, custom hooks)
+- Npm and webpack
+- Axios
+- Downloading data from external API
+- Async/await
+- Error handling
+
 
 ## Available Scripts
 
