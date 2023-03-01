@@ -12,7 +12,8 @@ export const theme = {
         stromboli: "#2f6655",
         skeptic: "#c2e4d9f2",
         tundora: "#4e4d4d93",
-        silver: "#ccc",    
+        silver: "#ccc",
+        crimson: "#db143c",    
     },
     breakpoint: {
         mobileMax: 767,
