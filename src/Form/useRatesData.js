@@ -13,10 +13,8 @@ export const useRatesData = () => {
   useEffect(() => {
     const getRatesData = async () => {
       try {
-        console.log("getting" + url);
         const response = await axios.get(url);
 
-        console.log(response);
         setRatesData({
           status: "success",
           rates: response.data.rates,
