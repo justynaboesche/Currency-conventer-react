@@ -8,10 +8,10 @@ export const StyledForm = styled.form`
     margin-bottom: 0px;
     text-align: center;
     box-shadow: 2px 2px 20px ${({ theme }) => theme.color.black};
-    height: 500px;
+    height: 560px;
 
     @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-        height: 600px;
+        height: 750px;
     }
 `;
 
@@ -49,4 +49,24 @@ export const Field = styled.input`
     border-radius: 5px;
 `;
 
+export const LoadingText = styled.p`
+    color: ${({ theme }) => theme.color.amazon};
+    font-size: 20px;
+    margin-top: 5rem;
+    line-height: 2;
+`;
 
+export const ErrorText = styled(LoadingText)`
+    color: ${({ theme }) => theme.color.crimson};
+`;
+
+export const Info = styled.p`
+    color: ${({ theme }) => theme.color.amazon};
+    font-style: italic;
+    text-align: center;
+    line-height: 1.5;
+`;
+
+export const StyledDate = styled.strong`
+    font-weight: 700;
+`;
