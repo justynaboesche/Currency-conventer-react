@@ -16,7 +16,7 @@ This simple currency-converter allows you to:
 The application has been prepared to be used in convenient way also on smaller devices.
 ## How it works
 
-![Currency-conventer-react GIF](public/images/demo.gif)
+![Currency-conventer-react GIF](public/images/demo_API.gif)
 
 ## Technologies used in the project
 To create the application I have used:
