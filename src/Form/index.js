@@ -14,9 +14,11 @@ import { Buttons } from "./Buttons";
 import { Clock } from "./Clock";
 import { useRatesData } from "./useRatesData";
 
+const initialCurrency = "EUR"
+
 export const Form = () => {
   const [amount, setAmount] = useState("");
-  const [currency, setCurrency] = useState("EUR");
+  const [currency, setCurrency] = useState(initialCurrency);
   const [result, setResult] = useState("");
   const ratesData = useRatesData();
 
@@ -37,7 +39,7 @@ export const Form = () => {
 
   const onResetClick = () => {
     setAmount("");
-    // setCurrency("EUR");
+    setCurrency(initialCurrency);
     setResult("");
   };
 
@@ -104,10 +106,7 @@ export const Form = () => {
               </p>
               <Buttons onResetClick={onResetClick} />
               <Result result={result} />
-              <Info>Kursy walut pobierane są z Europejskiego Banku Centralnego.<br />Aktualne na dzień:
-                <StyledDate>
-                  {ratesData.date}
-                </StyledDate>
+              <Info>Kursy walut pobierane są z Europejskiego Banku Centralnego.<br />Aktualne na dzień: <StyledDate>{ratesData.date}</StyledDate>
               </Info>
             </>
           ))
