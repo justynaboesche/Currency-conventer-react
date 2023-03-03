@@ -14,11 +14,11 @@ import { Buttons } from "./Buttons";
 import { Clock } from "./Clock";
 import { useRatesData } from "./useRatesData";
 
-const initialCurrency = "EUR"
+const INITAL_CURRENCY = "EUR"
 
 export const Form = () => {
   const [amount, setAmount] = useState("");
-  const [currency, setCurrency] = useState(initialCurrency);
+  const [currency, setCurrency] = useState(INITAL_CURRENCY);
   const [result, setResult] = useState("");
   const ratesData = useRatesData();
 
@@ -37,9 +37,10 @@ export const Form = () => {
     calculateResult(amount, currency);
   };
 
-  const onResetClick = () => {
+  const onResetClick = (event) => {
+    event.preventDefault();
     setAmount("");
-    setCurrency(initialCurrency);
+    setCurrency(INITAL_CURRENCY);
     setResult("");
   };
 
