@@ -9,10 +9,6 @@ export const GlobalStyle = createGlobalStyle`
   *, ::after, ::before {
     box-sizing:inherit;
   }
-  body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: ${({ theme }) => theme.color.gallery};
-  }
 
   #root {
     font-family: 'Montserrat', sans-serif;
@@ -25,5 +21,6 @@ export const GlobalStyle = createGlobalStyle`
     background-position: center;
     background-size: cover;
     background-color: white;
+    background-color: ${({ theme }) => theme.color.gallery};
   }
 `;
