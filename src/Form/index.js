@@ -4,6 +4,7 @@ import {
   Label,
   Field,
   LoadingText,
+  Spinner,
   ErrorText,
   Info,
   StyledDate
@@ -52,10 +53,13 @@ export const Form = () => {
         Kalkulator walut
       </Header>
       {ratesData.status === "loading" ? (
-        <LoadingText>
-          Zaczekaj chwilę... <br /> Trwa pobieranie danych z Europejskiego
-          Banku Centralnego...
-        </LoadingText>
+        <>
+          <LoadingText>
+            Zaczekaj chwilę... <br /> Trwa pobieranie danych z Europejskiego
+            Banku Centralnego...
+          </LoadingText>
+          <Spinner></Spinner>
+        </>
       )
         : (
           ratesData.status === "error" ? (

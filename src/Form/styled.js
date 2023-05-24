@@ -56,6 +56,29 @@ export const LoadingText = styled.p`
     line-height: 2;
 `;
 
+export const Spinner = styled.div`
+  margin: 50px auto;
+  height: 60px;
+  width: 60px;
+  border: 5px solid ${({ theme }) => theme.color.amazon};
+  border-radius: 50%;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  animation: spin 1s linear infinite;
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg) scale(1.2);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+`;
+
 export const ErrorText = styled(LoadingText)`
     color: ${({ theme }) => theme.color.crimson};
 `;
